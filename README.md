@@ -1,4 +1,4 @@
-# ShrimpyWallet
+# ShrimpyWallet 💰
 
 Well... This is going to be a wallet 
 

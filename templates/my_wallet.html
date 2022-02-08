@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {%block body %}
     <h3>Esta é a sua ShrimpyWallet 💳 !!!</h3>
-    <br>
     <p> Use com sabedoria !!!</p>
+    <div>
+    <p>Seus Cartões : </p>
+    {% for cartao in meus_cartoes %}
+        <p><strong>{{cartao}}</p></strong>
+    {% endfor %}
+    </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from random import randint
 
 app = Flask(__name__)
@@ -14,5 +14,9 @@ def home():
 def my_wallet():
     return render_template('my_wallet.html',meus_cartoes=meus_cartoes)
 
+@app.route('/cards')
+def my_cards ():
+    return render_template('my_cards.html',meus_cartoes=meus_cartoes)
+
 if __name__ == "__main__" :
-    app.run()
+    app.run(debug=True)
